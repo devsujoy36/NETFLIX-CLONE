@@ -4,69 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix</title>
+    <title>Netflix Bangladesh-Watch TV</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assetsfile/favicon.ico" type="image/x-icon">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@700&display=swap');
+
         * {
             margin: 0;
             padding: 0;
+
+        }
+
+        body {
+            background-color: black;
+            font-family: 'Poppins', sans-serif;
         }
 
         .main {
-            background-image: url(bg.jpg);
+            height: 500px;
+            width: 100vw;
+            background-image: url(assetsfile/netflix-bg.jpg);
             background-position: center center;
             background-size: max(1200px, 100vw);
-            background-repeat: no-repeat;
-            height: 80vh;
-            position: relative;
+
 
         }
 
         .main .box {
-            height: 80vh;
             width: 100%;
+            height: 100%;
+            background-color: black;
             opacity: 0.44;
             position: absolute;
-            top: 0px;
-            background-color: black;
+            top: 0;
+
         }
 
-        nav {
-            max-width: 60vw;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .main nav {
+            width: 80vw;
             margin: auto;
-            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
 
         }
 
-        nav img {
-            color: red;
-            width: 114px;
+        .main nav img {
+            width: 110px;
             position: relative;
             z-index: 10;
         }
 
-        nav button {
+        .main nav button {
             position: relative;
             z-index: 10;
+            background-color: red;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 8px;
+
+        }
+
+        .hero {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero span:nth-child(1) {
+            font-size: 3em;
+            font-weight: 900;
+        }
+
+        .hero span {
+            font-size: 15px;
+            position: relative;
+            z-index: 11;
+            margin: 8px;
         }
     </style>
 </head>
 
 <body>
-
     <div class="main">
         <nav>
-            <span><img width="100px" src="logo.svg" alt=""></span>
-            <div class="flex">
+            <span><img src="All Svg/Logonetflix.png" alt=""></span>
+            <div class="btn">
                 <button>English</button>
                 <button>Sign In</button>
             </div>
         </nav>
-        <div class="box">
-
+        <div class="box"></div>
+        <div class="hero">
+            <span>Unlimited movies, TV shows, and more</span>
+            <span>Watch anywhere. Cancel anytime.</span>
+            <span>Ready to watch? Enter your email to create or restart your membership.</span>
         </div>
     </div>
 </body>
